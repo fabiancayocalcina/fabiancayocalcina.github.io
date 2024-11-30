@@ -1,20 +1,21 @@
+/* GENERAL */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333; /* Texto oscuro */
-    background-color: #f4f4f9; /* Fondo claro */
+    color: #333;
+    background-color: #f4f4f9;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    overflow: hidden;
 }
 
+/* TITULOS PRINCIPALES */
 header {
-    background: linear-gradient(135deg, #4caf50, #388e3c); /* Verde elegante */
+    background: linear-gradient(135deg, #3ca0ce, #305d70);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -24,6 +25,8 @@ header {
 
 header h1 {
     font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin: 0;
 }
 
@@ -32,6 +35,7 @@ header p {
     margin: 5px 0 0;
 }
 
+/* SECCIONES */
 section {
     background: #fff;
     margin: 20px 0;
@@ -40,13 +44,47 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* SUBTITULOS */
 section h2 {
-    color: #4caf50; /* Verde para los títulos */
-    border-bottom: 2px solid #4caf50;
+    font-size: 1.8rem;
+    color: #2d8ab4;
+    border-bottom: 2px solid #2a7192;
     display: inline-block;
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
+/* PARRAFOS E INFORMACIÓN */
+p {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ENLACES */
+a {
+    color: #195edf;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2d8ab4;
+}
+
+/* SOBRE MÍ */
 .about-me .content {
     display: flex;
     align-items: center;
@@ -56,29 +94,28 @@ section h2 {
 .about-me .info {
     display: flex;
     flex-direction: column;
-    gap: 14px; /* Espaciado entre filas */
+    gap: 14px;
 }
 
 .about-me .info .row {
     display: flex;
-    justify-content: flex-start; /* Mantiene los elementos alineados al inicio */
-    gap: 0px; /* Espaciado entre etiqueta y respuesta */
+    justify-content: flex-start;
+    gap: 0;
 }
 
 .about-me .info strong {
-    width: 120px; /* Ancho fijo para mantener alineación */
-    text-align: left; /* Alinea las etiquetas a la izquierda */
-    color: #4caf50; /* Verde para destacar los títulos */
-    font-weight: bold;
+    width: 120px;
+    text-align: left;
+    color: #2d8ab4;
 }
 
 .about-me .info span {
-    flex: 1; /* Permite que las respuestas ocupen el resto del espacio */
-    color: #333; /* Color del texto */
-    font-size: 1.1rem;
+    flex: 1;
+    color: #333;
+    font-size: 1rem;
 }
 
-.university-img {
+.about-me .university-img {
     width: 400px;
     height: auto;
     border-radius: 10px;
@@ -86,60 +123,19 @@ section h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    color: #388e3c; /* Verde oscuro para enlaces */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #4caf50;
-}
-
-.socials p a {
-    margin-right: 15px;
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #388e3c;
-    color: #fff;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
+/* MIS CURSOS */
 .mis-cursos h2 {
     text-align: center;
-    color: #4caf50; /* Verde para el título */
+    color: #2d8ab4;
+    border-bottom: 2px solid #2d8ab4;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .semestres {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre las columnas */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
@@ -151,48 +147,74 @@ footer p {
 }
 
 .semester h3 {
-    color: #333;
     font-size: 1.5rem;
-}
-
-.semester ul {
-    list-style-type: none;
-    padding-left: 0;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .semester ul li {
     margin: 8px 0;
 }
 
-.professor {
-    font-size: 0.9rem;
-    color: #555;
+/* PROFESORES */
+.profesores ul li {
+    font-size: 1rem;
+    color: #333;
 }
 
-.professor a {
-    color: #1e90ff; /* Color para el link */
+.profesores ul li strong {
+    font-weight: normal; /* Ajuste para que el texto no sea negrita */
+    color: #333;
+}
+
+.profesores ul li a {
+    color: #195edf;
     text-decoration: none;
-    margin-left: 10px;
 }
 
-.professor a:hover {
+.profesores ul li a:hover {
     text-decoration: underline;
 }
 
-.companeros ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
+/* COMPAÑEROS */
 .companeros ul li {
-    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #333;
 }
 
 .companeros ul li a {
-    color: #1e90ff; /* Color para el link */
+    color: #195edf;
     text-decoration: none;
 }
 
 .companeros ul li a:hover {
     text-decoration: underline;
+}
+
+/* REDES SOCIALES */
+.socials p a {
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2d8ab4;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
